@@ -9,7 +9,7 @@ pipeline {
         
     }
 
-   agent  Terraform
+   agent  { label 'Terraform' }
     stages {
         stage('checkout') {
             steps {

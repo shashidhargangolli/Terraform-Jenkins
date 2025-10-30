@@ -3,9 +3,10 @@ provider "aws" {
 }
 
 resource "aws_instance" "soo" {
-  ami           = "ami-07f07a6e1060cd2a8" # us-west-2
+  ami           = "ami-07f07a6e1060cd2a8" 
   instance_type = "t3.micro"
+  key_name      = "LinuxKeyPair"
   tags = {
-      Name = "TF1-Instance"
+      Name = "TF2-Instance"
   }
 }

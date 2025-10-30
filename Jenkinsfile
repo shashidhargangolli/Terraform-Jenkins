@@ -9,7 +9,7 @@ pipeline {
         
     }
 
-   agent  any
+   agent  Terraform
     stages {
         stage('checkout') {
             steps {
